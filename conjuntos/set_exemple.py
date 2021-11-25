@@ -1,0 +1,23 @@
+from random import shuffle
+
+s = set()
+s.add(2)
+print(f's.add(2): {s}')
+s.add(3)
+print(f's.add(3): {s}')
+s.add(3)
+print(f's.add(3): {s}')
+s.remove(2)
+print(f's.remove(2): {s}')
+print(f'2 in s: {2 in s}')
+print(f'3 in s: {3 in s}')
+s2 = set(range(10))
+print(f's2 = set(range(10)): {s2}')
+s2.remove(3)
+print(f's2.remove(0): {s2}')
+s3 = s2.union(s)
+print(f's3 = s2.union(s): {s3}')
+s4 = s3.intersection(s)
+print(f's4 = s3.intersection(s): {s4}')
+s5 = s2 - s
+print(f's4 = s2 - s: {s5}')
