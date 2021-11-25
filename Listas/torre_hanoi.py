@@ -33,12 +33,6 @@ def hanoi(n, orig='A', aux='B', dest='C'):
         stack.append((False, n - 1, aux, orig, dest))
 
 
-    # if n >= 1:
-    #     hanoi(n - 1, orig, dest, aux)
-    #     print(f'{orig} -> {dest} : {n}')
-    #     hanoi(n - 1, aux, orig, dest)
-
-
 for i in range(1, 5):
     print(f'########## Hanoi {i}')
     hanoi(i)
